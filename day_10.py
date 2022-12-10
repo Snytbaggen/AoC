@@ -15,7 +15,7 @@ currentLine = ''
 def checkDrawState():
     global currentLine
     currentLinePos = (state.cpuCycles - 1) % 40
-    if currentLinePos in range(state.registerX-1, state.registerX+2):
+    if currentLinePos in rangeInclusive(state.registerX-1, state.registerX+1):
         currentLine += '#'
     else:
         currentLine += '.'

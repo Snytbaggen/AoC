@@ -9,9 +9,9 @@ for i in range(0, numberOfSegments):
     segmentPositions.append([0, 0])
 
 def printExampleGrid():
-    for row in range(4, -1, -1):
+    for row in rangeInclusive(4, 0, -1):
         rowStr = ''
-        for col in range(0, 6):
+        for col in rangeInclusive(0, 5):
             charFound = False
             for i in range(0, len(segmentPositions)):
                 if row == segmentPositions[i][0] and col == segmentPositions[i][1]:

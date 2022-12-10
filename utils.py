@@ -10,3 +10,6 @@ def splitStringAsNumbers(source, regex):
 
 def sumStringList(list):
     return sum(map(int, list))
+
+def rangeInclusive(start, end, step = 1):
+    return range(start, end + 1, step)
