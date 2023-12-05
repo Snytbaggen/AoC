@@ -46,7 +46,3 @@ for i, card in enumerate(scratchCards):
 print(partOneScore)
 print(partTwoScore)
 print("Execution time: " + str((time.time() - starttime) * 1000) + " ms")
-
-test = False
-if test:
-    print("asdf")
